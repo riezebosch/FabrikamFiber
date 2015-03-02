@@ -151,6 +151,7 @@
     <Content Include="Content\images\logo_text.png" />
     <Content Include="Content\images\maps\map1.png" />
     <Content Include="Content\images\userphoto_kensanchez.jpg" />
+    <None Include="Content\style.css.token" />
     <Content Include="Content\style.css" />
     <None Include="Deploy\deploy.bat">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
