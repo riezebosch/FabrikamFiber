@@ -15,26 +15,27 @@ namespace FabrikamFiber.Web.UITests
     /// <summary>
     /// Summary description for CodedUITest1
     /// </summary>
-    //[CodedUITest]
+    [CodedUITest]
     public class CodedUITest1
     {
         public CodedUITest1()
         {
         }
 
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.TestCase", "http://vsalm:8080/tfs/fabrikamfibercollection;FabrikamFiber", "244", DataAccessMethod.Sequential), TestMethod]
+        [TestMethod]
+        //[DataSource("Microsoft.VisualStudio.TestTools.DataSource.TestCase", "http://vsalm:8080/tfs/fabrikamfibercollection;FabrikamFiber", "244", DataAccessMethod.Sequential), TestMethod]
         public void CodedUITestMethod1()
         {
             // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
             this.UIMap.Loadhttp127001100();
             this.UIMap.ClickonCustomerslink();
             this.UIMap.ClickonCreateNewbutton();
-            this.UIMap.EntercustomerdetailsFirstNameLastNameStreetCityStateZipParams.UIFirstNameEditText = TestContext.DataRow["FirstName"].ToString();
-            this.UIMap.EntercustomerdetailsFirstNameLastNameStreetCityStateZipParams.UILastNameEditText = TestContext.DataRow["LastName"].ToString();
-            this.UIMap.EntercustomerdetailsFirstNameLastNameStreetCityStateZipParams.UIStreetEditText = TestContext.DataRow["Street"].ToString();
-            this.UIMap.EntercustomerdetailsFirstNameLastNameStreetCityStateZipParams.UICityEditText = TestContext.DataRow["City"].ToString();
-            this.UIMap.EntercustomerdetailsFirstNameLastNameStreetCityStateZipParams.UIStateEditText = TestContext.DataRow["State"].ToString();
-            this.UIMap.EntercustomerdetailsFirstNameLastNameStreetCityStateZipParams.UIZipEditText = TestContext.DataRow["Zip"].ToString();
+            this.UIMap.EntercustomerdetailsFirstNameLastNameStreetCityStateZipParams.UIFirstNameEditText = "Bob";
+            this.UIMap.EntercustomerdetailsFirstNameLastNameStreetCityStateZipParams.UILastNameEditText = "Jansen";
+            this.UIMap.EntercustomerdetailsFirstNameLastNameStreetCityStateZipParams.UIStreetEditText = "Hoofdstraat";
+            this.UIMap.EntercustomerdetailsFirstNameLastNameStreetCityStateZipParams.UICityEditText = "Apeldoorn";
+            this.UIMap.EntercustomerdetailsFirstNameLastNameStreetCityStateZipParams.UIStateEditText = "N/A";
+            this.UIMap.EntercustomerdetailsFirstNameLastNameStreetCityStateZipParams.UIZipEditText = "2605 LG";
             this.UIMap.EntercustomerdetailsFirstNameLastNameStreetCityStateZip();
             this.UIMap.ClickCreate();
         }

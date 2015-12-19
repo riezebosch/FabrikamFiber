@@ -23,8 +23,8 @@ namespace FabrikamFiber.Web.UITests
     using Keyboard = Microsoft.VisualStudio.TestTools.UITesting.Keyboard;
     using Mouse = Microsoft.VisualStudio.TestTools.UITesting.Mouse;
     using MouseButtons = System.Windows.Forms.MouseButtons;
-    
-    
+    using System.Configuration;
+
     [GeneratedCode("Coded UITest Builder", "12.0.21005.1")]
     public partial class UIMap
     {
@@ -219,7 +219,7 @@ namespace FabrikamFiber.Web.UITests
         /// <summary>
         /// Go to web page 'http://127.0.0.1:100/' using new browser instance
         /// </summary>
-        public string UIBlankPageWindowsInteWindowUrl = "http://127.0.0.1:100/";
+        public string UIBlankPageWindowsInteWindowUrl = ConfigurationManager.AppSettings["url"];
         #endregion
     }
     
